@@ -1,5 +1,5 @@
 public class DiscountResponseWrap {
-	public Integer productId;
+    public Integer productId;
     public Integer discountPercentage;
     public Integer discountAmount;
 
