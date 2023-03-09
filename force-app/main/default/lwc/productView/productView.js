@@ -23,8 +23,7 @@ export default class ProductView extends LightningElement {
                 this.products = data;
                 this.error = undefined;
                 this.loading = false;
-            }
-            )
+            })
             .catch((error) => {
                 this.error = error;
                 this.products = undefined;
