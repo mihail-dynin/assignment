@@ -13,7 +13,7 @@ public class SimpleRestService {
             for(Integer i = 0; i < deserializedResponse.size(); i++) {
                 Map<String, Object> item = (Map<String, Object>)JSON.deserializeUntyped(JSON.serialize(deserializedResponse[i]));  // [{...}, {...}] -> "products": [{...}, {...}]
                 products.add(new ProductResponseWrap(item));
-			}
+	    }
         }
         return products;
     }
@@ -33,7 +33,7 @@ public class SimpleRestService {
                 Map<String, Object> item = (Map<String, Object>)JSON.deserializeUntyped(JSON.serialize(deserializedResponse[i]));
                 DiscountResponseWrap discountWrap = new DiscountResponseWrap(item);
                 discounts.put(String.valueOf(discountWrap.productId), discountWrap);
-			}
+	    }
         }
         return discounts;
     }
