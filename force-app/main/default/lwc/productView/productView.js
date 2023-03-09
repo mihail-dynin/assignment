@@ -1,4 +1,4 @@
-import { LightningElement, wire, track } from 'lwc';
+import { LightningElement, track } from 'lwc';
 import getDiscount from '@salesforce/apex/DiscountService.getDiscount';
 
 const columns = [
